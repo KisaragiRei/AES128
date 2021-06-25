@@ -11,7 +11,7 @@ extern bytes sbox_n[16][16];
 extern bytes col[4][4]; // 列混合矩阵
 extern bytes col_n[4][4]; // 逆列混合矩阵
 
-bytes gf256_add(bytes a, bytes b); // gf256上的加法 异或
+// bytes gf256_add(bytes a, bytes b); // gf256上的加法 异或
 bytes gf256_mul(bytes a, bytes b); // gf256上的乘法 查表
 int myscanf(bytes* a); // 转换字符形式的十六进制输入 例如将"0x39c5bb"转换为0x39c5bb 返回输入字节数
 void init_mt(bytes* plain_text, bytes plain_mt[][4],  bytes* cipher_text, bytes cipher_mt[][4], bytes* key); // 初始化状态矩阵
