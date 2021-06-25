@@ -332,10 +332,10 @@ int readfile(char* fname, bytes* content)
     return n;
 }
 
-bytes gf256_add(bytes a, bytes b)
-{
-    return a^b; // 其实就是个异或运算
-}
+// bytes gf256_add(bytes a, bytes b)
+// {
+//     return a^b; // 其实就是个异或运算
+// }
 
 bytes gf256_mul(bytes a, bytes b)
 {
